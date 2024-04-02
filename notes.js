@@ -107,4 +107,10 @@
 
 
 
-// 
+// https://mrkandreev.name/snippets/gitignore-generator/#Node
+
+//node --watch
+
+//dev dependency  ony fr dovelpmnnt not in production
+// npm i -D nodemon
+//dotenv
