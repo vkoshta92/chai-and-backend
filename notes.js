@@ -114,3 +114,5 @@
 //dev dependency  ony fr dovelpmnnt not in production
 // npm i -D nodemon
 //dotenv
+//prettier
+//npm i -D prettier
