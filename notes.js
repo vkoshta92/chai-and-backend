@@ -119,3 +119,8 @@
 
 
 // https://cloud.mongodb.com/v2/660ed6783ba2241318412371#/clusters/connect?clusterId=Cluster0
+
+
+//npm i cookie-parser
+//npm i cors  
+// next ak flag hota h bs jse(err,req,res,next)
