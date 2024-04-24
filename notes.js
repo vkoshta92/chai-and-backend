@@ -124,3 +124,9 @@
 //npm i cookie-parser
 //npm i cors  
 // next ak flag hota h bs jse(err,req,res,next)
+
+// npm i mongoose-aggregate-paginate-v2
+
+//npm i bcrypt   // hash password
+//jwt- json web token(cryptography) - jwt ak bearer token  hai jo uskobear krta h usko hsi  n lete h jiske pas hoga hm use data bhej denge
+//npm i bcrypt jsonwebtoken
