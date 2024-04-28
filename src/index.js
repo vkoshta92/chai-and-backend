@@ -5,9 +5,10 @@ import dotenv from "dotenv" // agar requre ki jgh ye use krenge to   hme package
 // import { mongoose } from "mongoose";
 // import {DB_NAME} from "./constants";
 import connectDB from "./db/index.js";
-import express from "express";
+import { app } from './app.js'
+// import express from "express";
 
-const app = express(); // Initialize Express app
+// const app = express(); // Initialize Express app
 
 dotenv.config({
     path:'./env'

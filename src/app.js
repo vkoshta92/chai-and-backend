@@ -18,12 +18,12 @@ app.use(cookieParser())
 
 //routes import
 
-import userRouter from './routes/user.routes'
+import userRouter from './routes/user.routes.js'
 
 
 //routes decleration
 app.use("/api/v1/users",userRouter)
-
+// console.log('server is running');
 //http://localhost:8000/api/v1/users/login
 
 export { app } 
