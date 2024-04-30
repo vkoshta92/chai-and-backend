@@ -56,7 +56,7 @@ const userSchema = new Schema(
 // hook save ke  just phle encrypt kar dega.
 userSchema.pre("save",async function(next){
     if(!this.isModified("password")) return next();
-this.password= bcrypt.hash(this.password,10)  // agar kuch paassword me hange h tbhi ye chle  vrna nhi isiliye condition gai hai
+this.password= await bcrypt.hash(this.password,10)  // agar kuch paassword me hange h tbhi ye chle  vrna nhi isiliye condition gai hai
 next()
 })
 

@@ -142,3 +142,6 @@
 // content-type
 // cookie
 // cahe-control
+
+// export default me {} nhi lgta h jab import karo
+// normal export me { } lgta h jab import karo
