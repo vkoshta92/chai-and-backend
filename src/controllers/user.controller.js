@@ -92,9 +92,12 @@ if(!avatar){
  //return response.....
 // ise createdUser direct bhej skte h par organise bhenege class bni h airesponse ki
  return res.status(201).json(
-200,
-createdUser,
-"User Resistered Suucessfully"
+    new ApiResponse(
+        200,
+        createdUser,
+        "User Resistered Suucessfully"
+    )
+
  )
 
 
