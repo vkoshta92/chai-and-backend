@@ -11,7 +11,7 @@ import { app } from './app.js'
 // const app = express(); // Initialize Express app
 
 dotenv.config({
-    path:'./env'
+    path:'./.env'
 })
 
 connectDB()

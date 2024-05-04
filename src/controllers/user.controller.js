@@ -38,7 +38,7 @@ throw new ApiError(400,"All fields are requred")
 
 //check if user already exist: username,email................................
 
-const existedUser=User.findOne({ // model se user nikla and or ke syntex se multiple check kr  skte hai
+const existedUser=await User.findOne({ // model se user nikla and or ke syntex se multiple check kr  skte hai
     $or:[{username}, {email}]
 })
 
@@ -48,7 +48,14 @@ if(existedUser){
 
 //check for images, check for avatar.................
 const avatarLocalPath=req.files?.avatar[0]?.path;
-const coverImagaeLocalPath= req.files?.coverImage[0]?.path;
+// const coverImagaeLocalPath= req.files?.coverImage[0]?.path;
+
+let coverImagaeLocalPath;
+
+if(req.files && Array.isArray(req.files.coverImage) && req.files.coverImage.length>0){
+    coverImagaeLocalPath= req.files.coverImage[0].path
+}
+
 
 if(!avatarLocalPath){
     throw new ApiError(400,"Avatar is required");
